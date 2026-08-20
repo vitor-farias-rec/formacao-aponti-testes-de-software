@@ -38,7 +38,7 @@
 
 | Cenário de Sucesso | Cenário de Falha |
 |---|---|
-| A tela carregou com todos os elementos esperados. A tabela exibiu o registro "Papel A4", quantidade 18, movimentação "Entrada", data 2026-07-10, com ícones de editar e excluir na coluna Ações. | A tela carregou com todos os elementos esperados. A tabela exibiu o registro "Papel A4", quantidade 18, movimentação "Entrada", data 2026-07-10, com ícones de editar e excluir na coluna Ações. |
+| A tela carregou com todos os elementos esperados. A tabela exibiu o registro "Papel A4", quantidade 18, movimentação "Entrada", data 2026-07-10, com ícones de editar e excluir na coluna Ações. | A tela carregou com apenas 3 colunas "PRODUTO", "QUANTIDADE" e "MOVIMENTAÇÃO", não constando coluna para "DATA", um elemento essencial para estoque de produtos. Dessa forma, a exibição da tabela do registro "Papel A4", quantidade 18, movimentação "Entrada" foi comprometida. Demais ícones de editar e excluir foram renderizados na coluna "AÇÕES". |
 
 ## CT-02 Acesso ao formulário de novo registro
 
@@ -56,7 +56,7 @@
 
 | Cenário de Sucesso | Cenário de Falha |
 |---|---|
-| O formulário exibiu corretamente os 4 campos esperados (Produto, Quantidade, Movimentação, Data) e os botões "Cancelar", "Salvar registro" e "Voltar", mantendo um padrão coerente de interface. | O formulário exibiu corretamente os 4 campos esperados (Produto, Quantidade, Movimentação, Data) e os botões "Cancelar", "Salvar registro" e "Voltar", mantendo um padrão coerente de interface. |
+| O formulário exibiu corretamente os 4 campos esperados (Produto, Quantidade, Movimentação, Data) e os botões "Cancelar", "Salvar registro" e "Voltar", mantendo um padrão coerente de interface. | O botão "+ Novo Registro" não carrega e nem redireciona a página para fluxo correto da ação do usuário. |
 
 ## CT-03 Validação de tipo no campo "Quantidade"
 
@@ -90,7 +90,7 @@
 
 | Cenário de Sucesso | Cenário de Falha |
 |---|---|
-| Não há formatação padrão de data em nenhuma etapa: o campo aceita qualquer texto e a tabela exibe exatamente o que foi digitado, sem conversão. Se dois usuários cadastrarem datas em formatos diferentes, os dois formatos vão conviver na mesma tabela. Além disso, a divergência do formato de data estabelecido no cabeçalho da tela (data atual do sistema) e o que pode ser salvo em registro. | Não há formatação padrão de data em nenhuma etapa: o campo aceita qualquer texto e a tabela exibe exatamente o que foi digitado, sem conversão. Se dois usuários cadastrarem datas em formatos diferentes, os dois formatos vão conviver na mesma tabela. Além disso, a divergência do formato de data estabelecido no cabeçalho da tela (data atual do sistema) e o que pode ser salvo em registro. |
+| Formatação padrão de data XX/XX/XX. Se dois usuários cadastrarem datas em formatos diferentes, os dois formatos vão conviver na mesma tabela. Além disso, a divergência do formato de data estabelecido no cabeçalho da tela (data atual do sistema) e o que pode ser salvo em registro. | Não há formatação padrão de data em nenhuma etapa: o campo aceita qualquer texto e a tabela exibe exatamente o que foi digitado, sem conversão. Se dois usuários cadastrarem datas em formatos diferentes, os dois formatos vão conviver na mesma tabela. Além disso, a divergência do formato de data estabelecido no cabeçalho da tela (data atual do sistema) e o que pode ser salvo em registro. |
 
 ## CT-05 Restrição de acesso ao módulo por perfil
 
