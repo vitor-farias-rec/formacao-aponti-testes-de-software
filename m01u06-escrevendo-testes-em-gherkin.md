@@ -90,7 +90,7 @@
 
 | Cenário de Sucesso | Cenário de Falha |
 |---|---|
-| Formatação padrão de data XX/XX/XX. Se dois usuários cadastrarem datas em formatos diferentes, os dois formatos vão conviver na mesma tabela. Além disso, a divergência do formato de data estabelecido no cabeçalho da tela (data atual do sistema) e o que pode ser salvo em registro. | Não há formatação padrão de data em nenhuma etapa: o campo aceita qualquer texto e a tabela exibe exatamente o que foi digitado, sem conversão. Se dois usuários cadastrarem datas em formatos diferentes, os dois formatos vão conviver na mesma tabela. Além disso, a divergência do formato de data estabelecido no cabeçalho da tela (data atual do sistema) e o que pode ser salvo em registro. |
+| Formatação padrão de data DD/MM/AAAA. O sistema não aceita formato fora do padrão da tabela. | Não há formatação padrão de data em nenhuma etapa: o campo aceita qualquer texto e a tabela exibe exatamente o que foi digitado, sem conversão. Se dois usuários cadastrarem datas em formatos diferentes, os dois formatos vão conviver na mesma tabela. Além disso, a divergência do formato de data estabelecido no cabeçalho da tela (data atual do sistema) e o que pode ser salvo em registro. |
 
 ## CT-05 Restrição de acesso ao módulo por perfil
 
@@ -108,4 +108,4 @@
 
 | Cenário de Sucesso | Cenário de Falha |
 |---|---|
-| O sistema restringe o acesso ao módulo de Controle de Estoque aos perfis de admin e funcionários. | O sistema restringe o acesso ao módulo de Controle de Estoque aos perfis de admin e funcionários. |
+| O sistema restringe o acesso ao módulo de Controle de Estoque aos perfis de admin e funcionários. | O sistema permite o acesso ao módulo de Controle de Estoque aos 4 perfis de admin, funcionário, cliente e médico. |
