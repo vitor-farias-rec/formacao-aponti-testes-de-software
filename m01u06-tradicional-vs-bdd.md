@@ -22,6 +22,18 @@
 
 ## CT-08 Validação Temporal da Função de Movimentação de Estoque
 
+**Evidência:**
+
+<details>
+   <summary>📹 <b>Clique para expandir evidência </b></summary>
+   <br>
+   
+ <img width="1919" height="785" alt="evidencia-jsapp-08" src="https://github.com/user-attachments/assets/998b6796-d2b7-4b0b-bb4b-997451f5c0e4" />
+<img width="1919" height="823" alt="evidencia-inspecionar-08" src="https://github.com/user-attachments/assets/cea73c63-8f40-4ba9-882e-0febd3571ac7" />
+
+
+   </details>
+
 ### **BDD-Gherkin:**
 
 Cenário: Submeter registro de estoque com a data atual com sucesso
@@ -74,9 +86,9 @@ Pré-condições: Formulário de estoque carregado e função submitForm(e) disp
 
 Passos:
 
-Submeter o formulário chamando a função submitForm(e) contendo uma data igual à data atual no array de valores v = ["Papel A4", "960", "Entrada", "19-08-2026"].
+1. Submeter o formulário chamando a função submitForm(e) contendo uma data igual à data atual no array de valores v = ["Papel A4", "960", "Entrada", "19-08-2026"].
 
-Submeter o formulário chamando a função submitForm(e) contendo uma data posterior à data atual no array de valores v = ["Papel A4", "960", "Entrada", "22-08-2026"].
+2. Submeter o formulário chamando a função submitForm(e) contendo uma data posterior à data atual no array de valores v = ["Papel A4", "960", "Entrada", "22-08-2026"].
 
 Resultado Esperado:
 
