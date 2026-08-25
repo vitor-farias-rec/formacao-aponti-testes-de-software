@@ -26,15 +26,15 @@
 
 ### **BDD-Gherkin:**
 
-1. Given usuário está autenticado como "admin" com perfil "Administrador"
+- Given usuário está autenticado como "admin" com perfil "Administrador"
 
-2. And e existe ao menos 1 registro cadastrado no Controle de Estoque
+- And e existe ao menos 1 registro cadastrado no Controle de Estoque
 
-3. When acesso o menu "Suprimentos" e clico em "Controle de estoque"
+- When acesso o menu "Suprimentos" e clico em "Controle de estoque"
 
-4. Then a tela exibe o título "Controle de estoque", o campo de pesquisa e o botão "+ Novo registro"
+- Then a tela exibe o título "Controle de estoque", o campo de pesquisa e o botão "+ Novo registro"
 
-5. And a tabela exibe as colunas "PRODUTO", "QUANTIDADE", "MOVIMENTAÇÃO", "DATA" e "AÇÕES" com os registros existentes
+- And a tabela exibe as colunas "PRODUTO", "QUANTIDADE", "MOVIMENTAÇÃO", "DATA" e "AÇÕES" com os registros existentes
 
 | Cenário de Sucesso | Cenário de Falha |
 |---|---|
@@ -44,15 +44,15 @@
 
 ### **BDD-Gherkin:**
 
-1. Given que estou autenticado como "admin" na listagem do Controle de Estoque
+- Given que estou autenticado como "admin" na listagem do Controle de Estoque
 
-2. When clico no botão "+ Novo registro"
+- When clico no botão "+ Novo registro"
 
-3. Then o sistema exibe a tela "Novo registro - Controle de estoque"
+- Then o sistema exibe a tela "Novo registro - Controle de estoque"
 
-4. And o formulário contém os campos Produto, Quantidade, Movimentação e Data
+- And o formulário contém os campos Produto, Quantidade, Movimentação e Data
 
-5. And exibe os botões "Cancelar", "Salvar registro" e "Voltar"
+- And exibe os botões "Cancelar", "Salvar registro" e "Voltar"
 
 | Cenário de Sucesso | Cenário de Falha |
 |---|---|
@@ -62,13 +62,13 @@
 
 ### **BDD-Gherkin:**
 
-1. Given que estou no formulário "Novo registro - Controle de estoque" com os demais campos preenchidos
+- Given que estou no formulário "Novo registro - Controle de estoque" com os demais campos preenchidos
 
-2. When digito um valor não numérico, como "dez", no campo "Quantidade"
+- When digito um valor não numérico, como "dez", no campo "Quantidade"
 
-3. And clico em "Salvar registro"
+- And clico em "Salvar registro"
 
-4. Then o sistema deve rejeitar o valor e impedir o envio do formulário
+- Then o sistema deve rejeitar o valor e impedir o envio do formulário
 
 | Cenário de Sucesso | Cenário de Falha |
 |---|---|
@@ -78,15 +78,15 @@
 
 ### **BDD-Gherkin:**
 
-1. Given que estou na tela "Controle de estoque" autenticado como "admin"
+- Given que estou na tela "Controle de estoque" autenticado como "admin"
 
-2. When comparo a data do cabeçalho com a data da coluna "DATA" da tabela
+- When comparo a data do cabeçalho com a data da coluna "DATA" da tabela
 
-3. Then as duas deveriam seguir o mesmo formato de exibição
+- Then as duas deveriam seguir o mesmo formato de exibição
 
-4. But o cabeçalho mostra a data por extenso e a tabela mostra formato ("aaaa-mm-dd")
+- But o cabeçalho mostra a data por extenso e a tabela mostra formato ("aaaa-mm-dd")
 
-5. And o campo "Data" do formulário não possui seletor de calendário nem indicação do formato esperado
+- And o campo "Data" do formulário não possui seletor de calendário nem indicação do formato esperado
 
 | Cenário de Sucesso | Cenário de Falha |
 |---|---|
@@ -96,15 +96,15 @@
 
 ### **BDD-Gherkin:**
 
-1. Given usuário está na tela de login do sistema
+- Given usuário está na tela de login do sistema
 
-2. When e entra com a conta de demonstração do perfil "Médico"
+- When e entra com a conta de demonstração do perfil "Médico"
 
-3. Then o item "Controle de estoque" não aparece no menu lateral
+- Then o item "Controle de estoque" não aparece no menu lateral
 
-4. When usuário sair e entrar com a conta de demonstração do perfil "Cliente"
+- When usuário sair e entrar com a conta de demonstração do perfil "Cliente"
 
-5. Then o item "Controle de estoque" não aparece no menu lateral
+- Then o item "Controle de estoque" não aparece no menu lateral
 
 | Cenário de Sucesso | Cenário de Falha |
 |---|---|
