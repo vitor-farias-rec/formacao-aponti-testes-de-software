@@ -38,43 +38,43 @@
 
 Cenário: Submeter registro de estoque com a data atual com sucesso
 
-1. Given os seguintes dados de teste estão prontos para envio:
+- Given os seguintes dados de teste estão prontos para envio:
 
 | Item | Quantidade | Tipo | Data |
 | :--- | :--- | :--- | :--- |
 | Papel A4 | 960 | Entrada | 19-08-2026 |
 
-2. When usuário chamar a função "submitForm(e)" com esses dados
+- When usuário chamar a função "submitForm(e)" com esses dados
 
-3. Then a função deve processar os dados aplicando o ".trim()"
+- Then a função deve processar os dados aplicando o ".trim()"
 
-4. And a função "save(d)" deve ser executada com sucesso
+- And a função "save(d)" deve ser executada com sucesso
 
-5. And o registro deve ser mantido no "localStorage"
+- And o registro deve ser mantido no "localStorage"
 
-6. And a mensagem de confirmação "Registro salvo com sucesso." deve ser exibida
+- And a mensagem de confirmação "Registro salvo com sucesso." deve ser exibida
 
-7. And a tabela de estoque deve ser atualizada exibindo o novo item
+- And a tabela de estoque deve ser atualizada exibindo o novo item
 
 Cenário: Impedir o registro de estoque com data futura
 
-1. Given os seguintes dados de teste estão prontos para envio::
+- Given os seguintes dados de teste estão prontos para envio::
 
 | Item | Quantidade | Tipo | Data |
 | :--- | :--- | :--- | :--- |
 | Papel A4 | 960 | Entrada | 22-08-2026 |
 
-2. When usuário chamar a função "submitForm(e)" com esses dados contendo uma data futura
+- When usuário chamar a função "submitForm(e)" com esses dados contendo uma data futura
 
-3. Then o envio deve ser bloqueado
+- Then o envio deve ser bloqueado
 
-4. And a função "save(d)" não deve ser chamada
+- And a função "save(d)" não deve ser chamada
 
-5. And nenhuma alteração deve ser feita no "localStorage"
+- And nenhuma alteração deve ser feita no "localStorage"
 
-6. And o registro não deve ser adicionado à tabela
+- And o registro não deve ser adicionado à tabela
 
-7. And um alerta deve ser exibido informando que não são permitidos lançamentos com datas posteriores à data atual
+- And um alerta deve ser exibido informando que não são permitidos lançamentos com datas posteriores à data atual
 
 ### **Script Teste Manual:**
 
